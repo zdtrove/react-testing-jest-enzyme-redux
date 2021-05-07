@@ -1,15 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import Header from '../header/Header'
+import { findByTestAttr } from '../../utils/testUntils'
 
 const setup = (props = {}) => {
     const component = shallow(<Header {...props} />)
     return component
-}
-
-const findByTestAttr = (component, attr) => {
-    const wrapper = component.find(`[data-test='${attr}']`)
-    return wrapper
 }
 
 describe('Header Component', () => {
@@ -20,7 +16,7 @@ describe('Header Component', () => {
     })
 
     test('Should render without errors', () => {
-        const wrapper = findByTestAttr(component, 'headerComponent')
+        const wrapper = findByTestAttr(component, 'header-component')
         expect(wrapper.length).toBe(1)
     })
 
