@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme'
 import ListItem from '../../components/listItem/ListItem'
-import { checkProps, findByTestAttr } from '../../utils/testUntils'
+import { checkProps, findByTestAttr } from '../../utils/testUtils'
 
 describe('ListItem Component', () => {
     describe('Checking PropTypes', () => {

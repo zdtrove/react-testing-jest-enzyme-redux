@@ -11,7 +11,7 @@ export class Button extends Component {
         const { buttonText } = this.props
         return (
             <button onClick={() => this.submitEvent()} data-test="button-component">
-                { buttonText}
+                { buttonText }
             </button>
         )
     }
