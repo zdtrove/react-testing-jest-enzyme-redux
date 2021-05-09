@@ -45,6 +45,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('test')
     const { posts } = this.props
     const { hideBtn } = this.state
     const configButton = {
